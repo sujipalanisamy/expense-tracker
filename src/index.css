@@ -1,0 +1,141 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  
+}
+/*income expense container*/
+.income-expense-container{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  max-width: 350px;
+  margin: 1rem auto;
+}
+.income,
+.expense{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.income.title,
+.expense.title{
+  font-size: 20px;
+  color: black;
+}
+.income{
+  color: green;
+}
+.expense{
+  color: red;
+}
+.block{
+  width: 2px;
+  background-color: #aaa;
+  border-radius: 10px;
+
+}
+.expense-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  
+  border-radius: 12px;
+  box-shadow: 0 2px 10px 8px rgba(0,0,0,0.1);
+  background-color: #fff;
+  flex-grow: 1;
+}
+.expense-item.positive{
+  border-right: 4px solid green;
+}
+.expense-item.negative{
+  border-right: 4px solid red;
+}
+.add-expense-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 12px;
+
+  max-width: 350px;
+  margin: 2rem auto;
+}
+
+.add-expense-container input[type="text"],
+.add-expense-container input[type="number"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: solid 0.5px;
+  background-color: rgb(204, 141, 202);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+}
+
+.add-expense-container input[type="number"] {
+  appearance: textfield;
+}
+
+.add-expense-container button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #4caf61;
+  color: white;
+  cursor: pointer;
+}
+
+.add-expense-container button:hover {
+  background-color: #3e8e41;
+}
+.tracker,
+.balance{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  font-family: bold;
+  
+}
+.balance{
+  background-color: lightcoral;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex: 1;
+  padding: 0.5rem;
+  border: solid 0.5px;
+  background-color: rgb(189, 118, 193);
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 1rem;
+}
+.error{
+  color: red;
+  font-size: 12px; 
+  margin: 0 0 0.75rem 0;
+}
+.whole{
+  background-color: rgb(209, 199, 232);
+}
+.delete{
+  background-color: rgb(244, 149, 146);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px solid;
+}
+.delete:hover{
+  background-color: red;
+}
+.expense-item-container{
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 400px;
+  gap: 10px;
+}
